@@ -15,6 +15,7 @@ class Reusablecontainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       margin: EdgeInsets.only(left: 10, top: 10, right: 10, bottom: 10),
       height:height,
       width: width,

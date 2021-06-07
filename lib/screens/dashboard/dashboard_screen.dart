@@ -17,11 +17,10 @@ class Dashboardscreen extends StatelessWidget {
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            Header(),
-            Divider(
-              color: Colors.amber,
-              height: 100,
+            Header(
+              text: 'Dashboard',
             ),
+
            
             SizedBox(height: 20,),
 
