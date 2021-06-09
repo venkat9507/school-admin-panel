@@ -24,7 +24,7 @@ class MainScreen extends StatelessWidget {
             Expanded(
               //deafault flex =1
               //and ittakes 1/6 part of screen
-              flex: 1,
+              flex: 2,
 
 
 
