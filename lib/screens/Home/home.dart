@@ -160,6 +160,7 @@ class Homepage extends StatelessWidget {
                    Text('Event Name',style: TextStyle(color: primaryColor,fontSize: 20,fontWeight: FontWeight.w900),),
                    Reusablecontainer(
 
+
                      height: 50,width: 500,
                      color: containeryellow,
                    

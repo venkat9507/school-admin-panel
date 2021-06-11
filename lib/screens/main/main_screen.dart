@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'components/Side_menu.dart';
 import 'package:dash_board1/screens/dashboard/dashboard_screen.dart';
 import 'package:dash_board1/screens/main/components/collpasemenu.dart';
+import 'package:dash_board1/responsive.dart';
 
 
 class MainScreen extends StatelessWidget {
@@ -21,7 +22,8 @@ class MainScreen extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            Expanded(
+            if (Responsive.isDesktop(context))
+              Expanded(
               //deafault flex =1
               //and ittakes 1/6 part of screen
               flex: 1,
@@ -32,7 +34,7 @@ class MainScreen extends StatelessWidget {
             ) ,
             Expanded(
               flex: 8,
-             child: Homepage(),
+             child:Dashboardscreen(),
 
 
 

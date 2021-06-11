@@ -35,12 +35,12 @@ class Dashboardscreen extends StatelessWidget {
 
 
                       children: [
-                        Reusablecontainer(height: 150,width: 300,color: Colors.white,
+                        Reusablecontainer(height: 150,width: MediaQuery.of(context).size.width*0.15,color: Colors.white,
                           child: Row( crossAxisAlignment: CrossAxisAlignment.start,
                             children: [   Container(
                           margin: EdgeInsets.only(left: 0, top: 0, right: 10, bottom: 10),
               height:70,
-              width: 100,
+                              width: MediaQuery.of(context).size.width*0.05,
 
               decoration: BoxDecoration(
                 color: primaryColor,
@@ -59,11 +59,11 @@ class Dashboardscreen extends StatelessWidget {
               ),
               child: Icon(Icons.group_sharp,color: Colors.black,size: 40,),
             ),
-                              SizedBox(width: 90,),
+                              SizedBox(width:MediaQuery.of(context).size.width* 0.02,),
                               Column(
                                 children: [
                                   SizedBox(height: 10,),
-                                  Text('Students',style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
+                                  Text('Students',overflow:TextOverflow.ellipsis,style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
                                   Text('42/50',style: TextStyle(fontSize: 15,color: primaryColor),) ,
 
 
@@ -77,49 +77,12 @@ class Dashboardscreen extends StatelessWidget {
 
 
                         ),
-                        Reusablecontainer(height: 150,width: 300, color: Colors.white,
-                          child: Row( crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [   Container(
-                            margin: EdgeInsets.only(left: 0, top: 0, right: 10, bottom: 10),
-                            height:70,
-                            width: 100,
-
-                            decoration: BoxDecoration(
-                              color: primaryColor,
-                              borderRadius: BorderRadius.only(
-                                topLeft: Radius.circular(10),
-
-                              ),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 1,
-                                  blurRadius: 7,
-                                  offset: Offset(0, 3), // changes position of shadow
-                                ),
-                              ],
-                            ),
-                            child: Icon(Icons.person,color: Colors.black,size: 40,),
-                          ),
-                            SizedBox(width: 90,),
-                            Column(
-                              children: [
-                                SizedBox(height: 10,),
-                                Text('Teachers',style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
-                                Text('42/50',style: TextStyle(fontSize: 15,color: primaryColor),) ,
-
-
-                              ],
-                            ),
-
-                          ],
-                        ),),
-                        Reusablecontainer(height: 150,width: 300,color: Colors.white,
+                        Reusablecontainer(height: 150,width: MediaQuery.of(context).size.width*0.15,color: Colors.white,
                           child: Row( crossAxisAlignment: CrossAxisAlignment.start,
                             children: [   Container(
                               margin: EdgeInsets.only(left: 0, top: 0, right: 10, bottom: 10),
                               height:70,
-                              width: 100,
+                              width: MediaQuery.of(context).size.width*0.05,
 
                               decoration: BoxDecoration(
                                 color: primaryColor,
@@ -136,13 +99,13 @@ class Dashboardscreen extends StatelessWidget {
                                   ),
                                 ],
                               ),
-                              child: Icon(Icons.person_pin,color: Colors.black,size: 40,),
+                              child: Icon(Icons.group_sharp,color: Colors.black,size: 40,),
                             ),
-                              SizedBox(width: 90,),
+                              SizedBox(width:MediaQuery.of(context).size.width* 0.02,),
                               Column(
                                 children: [
                                   SizedBox(height: 10,),
-                                  Text('Parents',style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
+                                  Text('Students',overflow:TextOverflow.ellipsis,style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
                                   Text('42/50',style: TextStyle(fontSize: 15,color: primaryColor),) ,
 
 
@@ -151,6 +114,52 @@ class Dashboardscreen extends StatelessWidget {
 
                             ],
                           ),
+
+
+
+
+                        ),
+                        Reusablecontainer(height: 150,width: MediaQuery.of(context).size.width*0.15,color: Colors.white,
+                          child: Row( crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [   Container(
+                              margin: EdgeInsets.only(left: 0, top: 0, right: 10, bottom: 10),
+                              height:70,
+                              width: MediaQuery.of(context).size.width*0.05,
+
+                              decoration: BoxDecoration(
+                                color: primaryColor,
+                                borderRadius: BorderRadius.only(
+                                  topLeft: Radius.circular(10),
+
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey.withOpacity(0.5),
+                                    spreadRadius: 1,
+                                    blurRadius: 7,
+                                    offset: Offset(0, 3), // changes position of shadow
+                                  ),
+                                ],
+                              ),
+                              child: Icon(Icons.group_sharp,color: Colors.black,size: 40,),
+                            ),
+                              SizedBox(width:MediaQuery.of(context).size.width* 0.02,),
+                              Column(
+                                children: [
+                                  SizedBox(height: 10,),
+                                  Text('Students',overflow:TextOverflow.ellipsis,style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
+                                  Text('42/50',style: TextStyle(fontSize: 15,color: primaryColor),) ,
+
+
+                                ],
+                              ),
+
+                            ],
+                          ),
+
+
+
+
                         ),
 
                       ],
@@ -215,7 +224,9 @@ class Dashboardscreen extends StatelessWidget {
 
                 ),
                 SizedBox(width: 20,),
-                Expanded(child: Reusablecontainer(height: 675,color: Colors.white,
+                  Expanded(child: Reusablecontainer(height: 675,
+                    width:MediaQuery.of(context).size.width*0.3,
+                  color: Colors.white,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -243,7 +254,7 @@ class Dashboardscreen extends StatelessWidget {
                         Listcontainer(
                           children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.085,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
