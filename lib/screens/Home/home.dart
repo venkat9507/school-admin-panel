@@ -9,6 +9,7 @@ class Homepage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return SafeArea(child: SingleChildScrollView(    padding:EdgeInsets.all(defaultPadding) ,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -49,8 +50,8 @@ class Homepage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Icon(Icons.group,color: Colors.black,size: 50,),
-                    Text('Students',style: TextStyle(fontSize:15),),
+                    Icon(Icons.person,color: Colors.black,size: 50,),
+                    Text('Teacher',style: TextStyle(fontSize:15),),
                     SizedBox(height: 20,)  ,
                     Reusablecontainer(height: 50,width: 50,color: Colors.white,
                       child: Icon(Icons.add,size: 30,),
@@ -66,8 +67,8 @@ class Homepage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Icon(Icons.group,color: Colors.black,size: 50,),
-                    Text('Students',style: TextStyle(fontSize:15),),
+                    Icon(Icons.person_pin,color: Colors.black,size: 50,),
+                    Text('parent',style: TextStyle(fontSize:15),),
                     SizedBox(height: 20,)  ,
                     Reusablecontainer(height: 50,width: 50,color: Colors.white,
                       child: Icon(Icons.add,size: 30,),
@@ -95,52 +96,50 @@ class Homepage extends StatelessWidget {
               width: 150,
               color: primaryColor,
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.group,color: Colors.black,size: 50,),
-                  Text('Students',style: TextStyle(fontSize:15),),
-                  SizedBox(height: 20,)  ,
-                  Reusablecontainer(height: 50,width: 50,color: Colors.white,
-                    child: Icon(Icons.add,size: 30,),
-                  ),
+                  Icon(Icons.calendar_today,color: Colors.black,size: 50,),
+                  SizedBox(height: size.height * 0.03,)  ,
+                  Text('Timetable',style: TextStyle(fontSize:15),),
+
+
 
 
                 ],),
             ),
-            Reusablecontainer(
-              height:200,
-              width: 150,
-              color: primaryColor,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Icon(Icons.group,color: Colors.black,size: 50,),
-                  Text('Students',style: TextStyle(fontSize:15),),
-                  SizedBox(height: 20,)  ,
-                  Reusablecontainer(height: 50,width: 50,color: Colors.white,
-                    child: Icon(Icons.add,size: 30,),
-                  ),
+              Reusablecontainer(
+                height:200,
+                width: 150,
+                color: primaryColor,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.fact_check_rounded,color: Colors.black,size: 50,),
+                    SizedBox(height: size.height * 0.03,)  ,
+                    Text('Leave',style: TextStyle(fontSize:15),),
 
 
-                ],),
-            ),
-            Reusablecontainer(
-              height:200,
-              width: 150,
-              color: primaryColor,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Icon(Icons.group,color: Colors.black,size: 50,),
-                  Text('Students',style: TextStyle(fontSize:15),),
-                  SizedBox(height: 20,)  ,
-                  Reusablecontainer(height: 50,width: 50,color: Colors.white,
-                    child: Icon(Icons.add,size: 30,),
-                  ),
 
 
-                ],),
-            ),
+                  ],),
+              ),
+              Reusablecontainer(
+                height:200,
+                width: 150,
+                color: primaryColor,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.class__rounded,color: Colors.black,size: 50,),
+                    SizedBox(height: size.height * 0.03,)  ,
+                    Text('Class',style: TextStyle(fontSize:15),),
+
+
+
+
+                  ],),
+              ),
+
           ],
 
           ),
