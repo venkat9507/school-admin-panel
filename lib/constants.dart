@@ -10,6 +10,7 @@ const selection=Colors.grey;
 const containeryellow=Color(0xffF6E5BC);
 const txtfieldcolor=Color(0xffFAF2DE) ;
 const containergrey= Colors.black12;
+Size size=MediaQuery.of(context).size;
 
 
 const defaultPadding = 20.0;

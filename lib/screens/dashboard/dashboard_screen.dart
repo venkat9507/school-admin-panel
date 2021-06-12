@@ -60,14 +60,16 @@ class Dashboardscreen extends StatelessWidget {
               child: Icon(Icons.group_sharp,color: Colors.black,size: 40,),
             ),
                               SizedBox(width:MediaQuery.of(context).size.width* 0.02,),
-                              Column(
-                                children: [
-                                  SizedBox(height: 10,),
-                                  Text('Students',overflow:TextOverflow.ellipsis,style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
-                                  Text('42/50',style: TextStyle(fontSize: 15,color: primaryColor),) ,
+                              Flexible(
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 10,),
+                                    Text('Students',overflow:TextOverflow.ellipsis,style: TextStyle(fontSize: 20,color: Colors.black,fontWeight:FontWeight.w900),) ,
+                                    Text('42/50',style: TextStyle(fontSize: 15,color: primaryColor),) ,
 
 
-                                ],
+                                  ],
+                                ),
                               ),
 
                             ],
@@ -166,7 +168,7 @@ class Dashboardscreen extends StatelessWidget {
                     ),
                     Reusablecontainer(height: 500, color: Colors.white,
                       child: Column(crossAxisAlignment: CrossAxisAlignment.start,
-                        
+
                         children: [
                           Container(
                             padding: EdgeInsets.all(20),
@@ -187,35 +189,37 @@ class Dashboardscreen extends StatelessWidget {
                               //   ),
                               // ],
                             ),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                Text('ApplicationUser',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                                SizedBox(width: 600,),
-                                Text('User',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                                SizedBox(width: 100,),
-                                Container(child: Dropdowmenu(),height: 30,width: 150,color: Colors.black,),
-                              
-                                
-                                
-                                
+                            child: Flexible(
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('ApplicationUser',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
+                                  // SizedBox(width: 600,),
+                                  Text('User',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
+                                  // SizedBox(width: 100,),
+                                  Container(child: Dropdowmenu(),height: 30,width: 150,color: Colors.black,),
 
-                              ],
+
+
+
+
+                                ],
+                              ),
                             ),
-                            
+
                           ),
                           Expanded(   flex: 2,
                             child: Container(   margin: EdgeInsets.all(30),
                                 padding: EdgeInsets.all(20),
                                 child: LineChartSample2(
-                                  
+
                                 )),
                           ),
 
                         ],
-                              
+
                       ),
-                     
+
 
                     ) ,
                   ],
@@ -253,8 +257,22 @@ class Dashboardscreen extends StatelessWidget {
                         ),
                         Listcontainer(
                           children: [
+                            Flexible(
+                              child: Row(
+                                children: [
+                                  Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
+                                  SizedBox(width:MediaQuery.of(context).size.width*0.090,),
+                                  Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
+                                ],
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        Listcontainer(
+                          children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width:MediaQuery.of(context).size.width*0.085,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.090,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
@@ -262,7 +280,7 @@ class Dashboardscreen extends StatelessWidget {
                         Listcontainer(
                           children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.090,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
@@ -270,7 +288,7 @@ class Dashboardscreen extends StatelessWidget {
                         Listcontainer(
                           children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.090,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
@@ -278,7 +296,7 @@ class Dashboardscreen extends StatelessWidget {
                         Listcontainer(
                           children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.090,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
@@ -286,7 +304,7 @@ class Dashboardscreen extends StatelessWidget {
                         Listcontainer(
                           children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.090,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
@@ -294,15 +312,7 @@ class Dashboardscreen extends StatelessWidget {
                         Listcontainer(
                           children: [
                             Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
-                            Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-
-                          ],
-                        ),
-                        Listcontainer(
-                          children: [
-                            Text('Class V-A',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
-                            SizedBox(width: 250,),
+                            SizedBox(width:MediaQuery.of(context).size.width*0.090,),
                             Text('97%',style: TextStyle(fontSize: 15,color: txtcolor,fontWeight: FontWeight.w900),) ,
 
                           ],
