@@ -53,9 +53,12 @@ Text(text,style: TextStyle(color: Colors.black,fontWeight:FontWeight.w900,fontSi
 
           ],
         ),
+        SizedBox(
+          height: 20,
+        ),
         Divider(
           color: primaryColor,
-          height: 100,
+          height: 0.01,
         ),
       ],
     );

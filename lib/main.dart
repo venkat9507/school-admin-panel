@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
       // theme: ThemeData.dark().copyWith(
       //   scaffoldBackgroundColor: Colors.white,
       //   textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme)
-      //       .apply(bodyColor: Colors.white),
-      //   canvasColor: Colors.white,
+      //       .apply(bodyColor: Colors.black),
+      //   // canvasColor: Colors.white,
       // ),
       home:  MainScreen(
         

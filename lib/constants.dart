@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 const primaryColor = Color(0xFFF9BE26);
 const secondaryColor = Color(0xFF2A2D3E);
@@ -10,7 +11,11 @@ const selection=Colors.grey;
 const containeryellow=Color(0xffF6E5BC);
 const txtfieldcolor=Color(0xffFAF2DE) ;
 const containergrey= Colors.black12;
-Size size=MediaQuery.of(context).size;
+Size size =MediaQuery.of(Get.context).size;
+
+
+
+
 
 
 const defaultPadding = 20.0;

@@ -22,7 +22,7 @@ class MainScreen extends StatelessWidget {
       body: SafeArea(
         child: Row(
           children: [
-            if (Responsive.isDesktop(context))
+
               Expanded(
               //deafault flex =1
               //and ittakes 1/6 part of screen
@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget {
             ) ,
             Expanded(
               flex: 8,
-             child:Dashboardscreen(),
+             child:Homepage(),
 
 
 

@@ -1,4 +1,5 @@
- import 'package:flutter/material.dart';
+ import 'package:dash_board1/screens/main/components/reusable_containers.dart';
+import 'package:flutter/material.dart';
 class Sidemenu extends StatelessWidget {
   const Sidemenu({
     Key key,
@@ -24,7 +25,7 @@ class Sidemenu extends StatelessWidget {
               // ),
             ) ,
 
-            Center(
+            Reusablecontainer(
               child: Column(
                 children: [
                   DrawerListTitle(title: 'HOME', icon: Icons.home, press: (){},),
